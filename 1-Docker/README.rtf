@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1- to start working with Docker  on the terminal:-\
+\'97> 
+\f1\fs22 \cf2 \CocoaLigature0 $ docker run hello-world ->> it means go to the docker hum and search for an image with the name \'93hello-world \'94 and pull it.\
+\
+2- To try something more ambitious, you can run an Ubuntu container with:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \CocoaLigature1 \'97>
+\f1\fs22 \cf2 \CocoaLigature0 $ docker run -it ubuntu bash \'97>> \
+\'91-it\'94 its means to run interactive images to can run on it something like python,PostgreSQL\
+\'93ubuntu\'94 image name\'94\
+\'93bash\'94 its command or parm will run on this image\
+\
+3- $ rm -rf / --no-preserve-root \'97> its mean you will remove everything \
+4- exit -> to exit from container/image\
+\
+5- $ docker run -it python:3.9 -> run interactive python image\
+6- $ docker image ls  >> to see all docker images on machine \
+7- $ docker image rm  < image id >   to remove image\
+8- docker container stop   < image id  or name > \
+9- docker container prune >> remove all stopped containers \
+10- docker container run -d -p 8080:80 \'97name=mywebserv httpd:2.4 >> This is a docker container with the name mywebserv\
+\
+11-docker tag myweb:1 mywebserver:latest  >> to rename image first name is old secound name is new \
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+}

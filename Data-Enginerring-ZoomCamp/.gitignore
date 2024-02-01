@@ -1,0 +1,4 @@
+# .gitignore
+Week_1/2_docker_sql/ny_taxi_postgres_data/
+Week_1/2_docker_sql/output.csv
+Week_1/2_docker_sql/yellow_tripdata_2021-01.csv 

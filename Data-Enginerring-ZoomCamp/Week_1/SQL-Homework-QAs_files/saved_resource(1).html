@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)http://localhost:8080/sqleditor/panel/3052818?is_query_tool=true&sgid=1&sid=1&did=16384&database_name=ny_taxi -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.t1u15qzo700-beta14{appearance:none;background-color:var(--rdg-background-color);block-size:100%;border:2px solid #ccc;box-sizing:border-box;color:var(--rdg-color);font-family:inherit;font-size:var(--rdg-font-size);inline-size:100%;padding-block:0;padding-inline:6px;vertical-align:top}.t1u15qzo700-beta14:focus{border-color:var(--rdg-selection-color);outline:none}.t1u15qzo700-beta14::placeholder{color:#999;opacity:1}</style><style type="text/css">.a3cv93f700-beta14{fill:currentColor}.a3cv93f700-beta14>path{transition:d .1s}</style><style type="text/css">.c1w9bbhr700-beta14{background-color:var(--rdg-selection-color);block-size:8px;cursor:move;inline-size:8px;inset-block-end:0;inset-inline-end:0;position:absolute}.c1w9bbhr700-beta14:hover{background-color:var(--rdg-background-color);block-size:16px;border:2px solid var(--rdg-selection-color);inline-size:16px}</style><style type="text/css">.cis5rrm700-beta14.rdg-cell{padding:0}</style><style type="text/css">.skuhp55700-beta14.r1upfr80700-beta14{line-height:var(--rdg-summary-row-height)}.skuhp55700-beta14.r1upfr80700-beta14>.cj343x0700-beta14{position:sticky}.sf8l5ub700-beta14>.cj343x0700-beta14{border-block-start:2px solid var(--rdg-summary-border-color)}</style><style type="text/css">.s8wc6fl700-beta14{inset-block-end:var(--rdg-summary-row-bottom);inset-block-start:var(--rdg-summary-row-top)}</style><style type="text/css">.g1yxluv3700-beta14:not([aria-selected=true]){background-color:var(--rdg-header-background-color)}.g1yxluv3700-beta14>.cj343x0700-beta14:not(:last-child):not(.c1wvphzh700-beta14){border-inline-end:none}</style><style type="text/css">.c6ra8a3700-beta14,.cq910m0700-beta14{background-color:#ccf}.cq910m0700-beta14.c6ra8a3700-beta14{background-color:#99f}</style><style type="text/css">.h10tskcx700-beta14{background-color:var(--rdg-header-background-color);display:contents;font-weight:700;line-height:var(--rdg-header-row-height)}.h10tskcx700-beta14>.cj343x0700-beta14{height:var(--rdg-header-row-height);inset-block-start:0;position:sticky;z-index:2}.h10tskcx700-beta14>.ch2wcw8700-beta14{z-index:3}</style><style type="text/css">.c6l2wv1700-beta14{touch-action:none}.c6l2wv1700-beta14:after{content:"";cursor:col-resize;inline-size:10px;inset-block-end:0;inset-block-start:0;inset-inline-end:0;position:absolute}</style><style type="text/css">.h1af91pe700-beta14{cursor:pointer;display:flex}.h1af91pe700-beta14:focus{outline:none}.hifiwer700-beta14{flex-grow:1;overflow:hidden;overflow:clip;text-overflow:ellipsis}</style><style type="text/css">.g1vzro7t700-beta14{outline:none}.c1fsqdic700-beta14{stroke:currentColor;stroke-width:1.5px;fill:transparent;margin-inline-start:4px;vertical-align:middle}.c1fsqdic700-beta14>path{transition:d .1s}</style><style type="text/css">.c2xai5k700-beta14{align-items:center;cursor:pointer;display:flex;inset:0;justify-content:center;margin-inline-end:1px;position:absolute}.c1nhzyev700-beta14{all:unset}.cdhtjkm700-beta14{background-color:var(--rdg-background-color);block-size:20px;border:2px solid var(--rdg-border-color);content:"";inline-size:20px}.c1nhzyev700-beta14:checked+.cdhtjkm700-beta14{background-color:var(--rdg-checkbox-color);outline:4px solid var(--rdg-background-color);outline-offset:-6px}.c1nhzyev700-beta14:focus+.cdhtjkm700-beta14{border-color:var(--rdg-checkbox-focus-color)}.cy65rq2700-beta14{cursor:default}.cy65rq2700-beta14 .cdhtjkm700-beta14{background-color:var(--rdg-checkbox-disabled-background-color);border-color:var(--rdg-checkbox-disabled-border-color)}</style><style type="text/css">.r1upfr80700-beta14{background-color:var(--rdg-background-color);display:contents;line-height:var(--rdg-row-height)}.r1upfr80700-beta14:hover{background-color:var(--rdg-row-hover-background-color)}.r1upfr80700-beta14[aria-selected=true]{background-color:var(--rdg-row-selected-background-color)}.r1upfr80700-beta14[aria-selected=true]:hover{background-color:var(--row-selected-hover-background-color)}.r190mhd3700-beta14{outline:2px solid var(--rdg-selection-color);outline-offset:-2px}.r139qu9m700-beta14:before{border-inline-start:2px solid var(--rdg-selection-color);content:"";display:inline-block;height:100%;inset-inline-start:0;position:sticky}</style><style type="text/css">.rnvodz5700-beta14{--rdg-color:#000;--rdg-border-color:#ddd;--rdg-summary-border-color:#aaa;--rdg-background-color:#fff;--rdg-header-background-color:#f9f9f9;--rdg-row-hover-background-color:#f5f5f5;--rdg-row-selected-background-color:#dbecfa;--row-selected-hover-background-color:#c9e3f8;--rdg-checkbox-color:#005194;--rdg-checkbox-focus-color:#61b8ff;--rdg-checkbox-disabled-border-color:#ccc;--rdg-checkbox-disabled-background-color:#ddd;--rdg-selection-color:#66afe9;--rdg-font-size:14px;background-color:var(--rdg-background-color);block-size:350px;border:1px solid var(--rdg-border-color);box-sizing:border-box;color:var(--rdg-color);color-scheme:var(--rdg-color-scheme,light dark);contain:strict;contain:size layout style paint;content-visibility:auto;display:grid;font-size:var(--rdg-font-size);overflow:auto;user-select:none}@supports not (contain:strict){.rnvodz5700-beta14{position:relative;z-index:0}}.rnvodz5700-beta14 *,.rnvodz5700-beta14 :after,.rnvodz5700-beta14 :before{box-sizing:inherit}.rnvodz5700-beta14:before{content:"";grid-column:1/-1;grid-row:1/-1}.rnvodz5700-beta14.rdg-dark{--rdg-color-scheme:dark;--rdg-color:#ddd;--rdg-border-color:#444;--rdg-summary-border-color:#555;--rdg-background-color:#212121;--rdg-header-background-color:#1b1b1b;--rdg-row-hover-background-color:#171717;--rdg-row-selected-background-color:#1a73bc;--row-selected-hover-background-color:#1768ab;--rdg-checkbox-color:#94cfff;--rdg-checkbox-focus-color:#c7e6ff;--rdg-checkbox-disabled-border-color:#000;--rdg-checkbox-disabled-background-color:#333}.rnvodz5700-beta14.rdg-light{--rdg-color-scheme:light}@media (prefers-color-scheme:dark){.rnvodz5700-beta14:not(.rdg-light){--rdg-color:#ddd;--rdg-border-color:#444;--rdg-summary-border-color:#555;--rdg-background-color:#212121;--rdg-header-background-color:#1b1b1b;--rdg-row-hover-background-color:#171717;--rdg-row-selected-background-color:#1a73bc;--row-selected-hover-background-color:#1768ab;--rdg-checkbox-color:#94cfff;--rdg-checkbox-focus-color:#c7e6ff;--rdg-checkbox-disabled-border-color:#000;--rdg-checkbox-disabled-background-color:#333}}.vlqv91k700-beta14.r1upfr80700-beta14{cursor:move}.f1lsfrzw700-beta14{grid-column:1/-1;pointer-events:none;z-index:4}</style><style type="text/css">.cj343x0700-beta14{background-color:inherit;border-block-end:1px solid var(--rdg-border-color);border-inline-end:1px solid var(--rdg-border-color);contain:strict;contain:size layout style paint;height:var(--rdg-row-height);outline:none;overflow:hidden;overflow:clip;padding-block:0;padding-inline:8px;text-overflow:ellipsis;white-space:nowrap}.cj343x0700-beta14[aria-selected=true]{outline:2px solid var(--rdg-selection-color);outline-offset:-2px}.csofj7r700-beta14 .cj343x0700-beta14{contain:content}.ch2wcw8700-beta14{position:sticky;z-index:1}.c1wvphzh700-beta14{box-shadow:calc(2px*var(--rdg-sign)) 0 5px -2px hsla(0,0%,53%,.3)}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ny_taxi/postgres@docker localhost</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- To set pgAdmin4 shortcut icon in browser -->
+    <link rel="shortcut icon" href="http://localhost:8080/favicon.ico?ver=80200">
+    <style>
+        .pg-sp-container {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            background: rgba(#000,0.6);
+            z-index: 9999;
+            top: 0;
+        }
+        .pg-sp-container .pg-sp-content {
+            position: absolute;
+            width: 100%;
+            top: 40%;
+        }
+        .pg-sp-icon {
+          background: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 38 38' style='enable-background:new 0 0 38 38;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:none;stroke:%23ebeef3;stroke-width:2;%7d .st1%7bfill:none;stroke:%23326690;stroke-width:2;%7d %3c/style%3e%3cg%3e%3cg transform='translate(1 1)'%3e%3ccircle class='st0' cx='18' cy='18' r='18'/%3e%3cpath class='st1' d='M36,18c0-9.9-8.1-18-18-18 '%3e%3canimateTransform accumulate='none' additive='replace' attributeName='transform' calcMode='linear' dur='0.7s' fill='remove' from='0 18 18' repeatCount='indefinite' restart='always' to='360 18 18' type='rotate'%3e%3c/animateTransform%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e") center center no-repeat;
+          height: 75px;
+          width: 100%;
+          text-align: center;
+        }
+        .pg-sp-text {
+          font-size: 20px;
+          text-align: center;
+          color: #fff;
+        }
+    </style>
+
+    <!-- Base template stylesheets -->
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.style.css">
+        <link type="text/css" rel="stylesheet" href="./pgadmin.css" data-theme="standard">
+
+     <!--View specified stylesheets-->
+    <link type="text/css" rel="stylesheet" href="./browser.css">
+
+    <script type="application/javascript">
+        /* This is used to change publicPath of webpack at runtime */
+        window.resourceBasePath = "/static/js/generated/";
+    </script>
+    <script type="application/javascript" src="./require.min.js"></script>
+    <!-- Base template scripts -->
+    <script type="application/javascript">
+            require.config({
+                baseUrl: '',
+                urlArgs: 'ver=80200',
+                waitSeconds: 0,
+                shim: {},
+                paths: {
+                    sources: "/static/js",
+                    datagrid: "/static/js/generated/datagrid",
+                    sqleditor: "/static/js/generated/sqleditor",
+                    'pgadmin.browser.utils': "/browser/" + "js/utils",
+                    'pgadmin.browser.endpoints': "/browser/" + "js/endpoints",
+                    'pgadmin.browser.messages': "/browser/" + "js/messages",
+                    'pgadmin.server.supported_servers': "/browser/" + "server/supported_servers",
+                    'pgadmin.user_management.current_user': "/user_management/" + "current_user",
+                    'translations': "/tools/" + "translations",
+                    'security.pages': "/static/js/generated/security.pages"
+                }
+            });
+
+    </script>
+    <script type="application/javascript" src="./vendor.react.js"></script>
+    <script type="application/javascript" src="./vendor.main.js"></script>
+    <script type="application/javascript" src="./vendor.others.js"></script>
+    <script type="application/javascript" src="./vendor.sqleditor.js"></script>
+    <script type="application/javascript" src="./pgadmin_commons.js"></script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/browser_nodes" src="./browser_nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/codemirror" src="./codemirror.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/sqleditor" src="./sqleditor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.endpoints" src="./endpoints.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.messages" src="./messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.utils" src="./utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.server.supported_servers" src="./supported_servers.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.user_management.current_user" src="./current_user.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="translations" src="./translations.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/gettext" src="./gettext.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/pgadmin" src="./pgadmin.js"></script><style>.picker_wrapper.no_alpha .picker_alpha{display:none}.picker_wrapper.no_editor .picker_editor{position:absolute;z-index:-1;opacity:0}.picker_wrapper.no_cancel .picker_cancel{display:none}.layout_default.picker_wrapper{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:stretch;font-size:10px;width:25em;padding:.5em}.layout_default.picker_wrapper input,.layout_default.picker_wrapper button{font-size:1rem}.layout_default.picker_wrapper>*{margin:.5em}.layout_default.picker_wrapper::before{content:"";display:block;width:100%;height:0;order:1}.layout_default .picker_slider,.layout_default .picker_selector{padding:1em}.layout_default .picker_hue{width:100%}.layout_default .picker_sl{flex:1 1 auto}.layout_default .picker_sl::before{content:"";display:block;padding-bottom:100%}.layout_default .picker_editor{order:1;width:6.5rem}.layout_default .picker_editor input{width:100%;height:100%}.layout_default .picker_sample{order:1;flex:1 1 auto}.layout_default .picker_done,.layout_default .picker_cancel{order:1}.picker_wrapper{box-sizing:border-box;background:#f2f2f2;box-shadow:0 0 0 1px silver;cursor:default;font-family:sans-serif;color:#444;pointer-events:auto}.picker_wrapper:focus{outline:none}.picker_wrapper button,.picker_wrapper input{box-sizing:border-box;border:none;box-shadow:0 0 0 1px silver;outline:none}.picker_wrapper button:focus,.picker_wrapper button:active,.picker_wrapper input:focus,.picker_wrapper input:active{box-shadow:0 0 2px 1px #1e90ff}.picker_wrapper button{padding:.4em .6em;cursor:pointer;background-color:#f5f5f5;background-image:linear-gradient(0deg, gainsboro, transparent)}.picker_wrapper button:active{background-image:linear-gradient(0deg, transparent, gainsboro)}.picker_wrapper button:hover{background-color:#fff}.picker_selector{position:absolute;z-index:1;display:block;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border:2px solid #fff;border-radius:100%;box-shadow:0 0 3px 1px #67b9ff;background:currentColor;cursor:pointer}.picker_slider .picker_selector{border-radius:2px}.picker_hue{position:relative;background-image:linear-gradient(90deg, red, yellow, lime, cyan, blue, magenta, red);box-shadow:0 0 0 1px silver}.picker_sl{position:relative;box-shadow:0 0 0 1px silver;background-image:linear-gradient(180deg, white, rgba(255, 255, 255, 0) 50%),linear-gradient(0deg, black, rgba(0, 0, 0, 0) 50%),linear-gradient(90deg, #808080, rgba(128, 128, 128, 0))}.picker_alpha,.picker_sample{position:relative;background:linear-gradient(45deg, lightgrey 25%, transparent 25%, transparent 75%, lightgrey 75%) 0 0/2em 2em,linear-gradient(45deg, lightgrey 25%, white 25%, white 75%, lightgrey 75%) 1em 1em/2em 2em;box-shadow:0 0 0 1px silver}.picker_alpha .picker_selector,.picker_sample .picker_selector{background:none}.picker_editor input{font-family:monospace;padding:.2em .4em}.picker_sample::before{content:"";position:absolute;display:block;width:100%;height:100%;background:currentColor}.picker_arrow{position:absolute;z-index:-1}.picker_wrapper.popup{position:absolute;z-index:2;margin:1.5em}.picker_wrapper.popup,.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{background:#f2f2f2;box-shadow:0 0 10px 1px rgba(0,0,0,.4)}.picker_wrapper.popup .picker_arrow{width:3em;height:3em;margin:0}.picker_wrapper.popup .picker_arrow::before,.picker_wrapper.popup .picker_arrow::after{content:"";display:block;position:absolute;top:0;left:0;z-index:-99}.picker_wrapper.popup .picker_arrow::before{width:100%;height:100%;-webkit-transform:skew(45deg);transform:skew(45deg);-webkit-transform-origin:0 100%;transform-origin:0 100%}.picker_wrapper.popup .picker_arrow::after{width:150%;height:150%;box-shadow:none}.popup.popup_top{bottom:100%;left:0}.popup.popup_top .picker_arrow{bottom:0;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.popup.popup_bottom{top:100%;left:0}.popup.popup_bottom .picker_arrow{top:0;left:0;-webkit-transform:rotate(90deg) scale(1, -1);transform:rotate(90deg) scale(1, -1)}.popup.popup_left{top:0;right:100%}.popup.popup_left .picker_arrow{top:0;right:0;-webkit-transform:scale(-1, 1);transform:scale(-1, 1)}.popup.popup_right{top:0;left:100%}.popup.popup_right .picker_arrow{top:0;left:0}</style><style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: none;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #326690;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #CC0000;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiBox">
+
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: #222;
+  padding: 2px 10px;
+  font-size: inherit;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: none;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(34, 34, 34, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiButton-root.Mui-disabled {
+  opacity: 0.6;
+}
+.MuiButton-root.MuiButton-sizeSmall, .MuiButton-root.MuiButton-outlinedSizeSmall, .MuiButton-root.MuiButton-containedSizeSmall {
+  height: 28px;
+  font-size: 0.875rem;
+}
+.MuiButton-root.MuiButton-sizeSmall .MuiSvgIcon-root, .MuiButton-root.MuiButton-outlinedSizeSmall .MuiSvgIcon-root, .MuiButton-root.MuiButton-containedSizeSmall .MuiSvgIcon-root {
+  height: 1.2rem;
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #326690;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(50, 102, 144, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #f50057;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 2px 10px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #326690;
+  border: 1px solid rgba(50, 102, 144, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #326690;
+  background-color: rgba(50, 102, 144, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: none;
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: none;
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #326690;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #326690;
+  }
+}
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 4px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style data-jss="" data-meta="MuiButtonGroup">
+.MuiButtonGroup-root {
+  display: inline-flex;
+  border-radius: 4px;
+}
+.MuiButtonGroup-contained {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiButtonGroup-disableElevation {
+  box-shadow: none;
+}
+.MuiButtonGroup-fullWidth {
+  width: 100%;
+}
+.MuiButtonGroup-vertical {
+  flex-direction: column;
+}
+.MuiButtonGroup-grouped {
+  min-width: 40px;
+}
+.MuiButtonGroup-groupedHorizontal:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.MuiButtonGroup-groupedHorizontal:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.MuiButtonGroup-groupedVertical:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.MuiButtonGroup-groupedVertical:not(:last-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.MuiButtonGroup-groupedTextHorizontal:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.23);
+}
+.MuiButtonGroup-groupedTextVertical:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+.MuiButtonGroup-groupedTextPrimary:not(:last-child) {
+  border-color: rgba(50, 102, 144, 0.5);
+}
+.MuiButtonGroup-groupedTextSecondary:not(:last-child) {
+  border-color: rgba(245, 0, 87, 0.5);
+}
+.MuiButtonGroup-groupedOutlinedHorizontal:not(:first-child) {
+  margin-left: -1px;
+}
+.MuiButtonGroup-groupedOutlinedHorizontal:not(:last-child) {
+  border-right-color: transparent;
+}
+.MuiButtonGroup-groupedOutlinedVertical:not(:first-child) {
+  margin-top: -1px;
+}
+.MuiButtonGroup-groupedOutlinedVertical:not(:last-child) {
+  border-bottom-color: transparent;
+}
+.MuiButtonGroup-groupedOutlinedPrimary:hover {
+  border-color: #326690;
+}
+.MuiButtonGroup-groupedOutlinedSecondary:hover {
+  border-color: #f50057;
+}
+.MuiButtonGroup-groupedContained {
+  box-shadow: none;
+}
+.MuiButtonGroup-groupedContainedHorizontal:not(:last-child) {
+  border-right: 1px solid #ebeef3;
+}
+.MuiButtonGroup-groupedContainedHorizontal:not(:last-child).Mui-disabled {
+  border-right: 1px solid rgba(0, 0, 0, 0.26);
+}
+.MuiButtonGroup-groupedContainedVertical:not(:last-child) {
+  border-bottom: 1px solid #ebeef3;
+}
+.MuiButtonGroup-groupedContainedVertical:not(:last-child).Mui-disabled {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
+  border-color: #303f9f;
+}
+.MuiButtonGroup-groupedContainedSecondary:not(:last-child) {
+  border-color: #c51162;
+}
+</style><style data-jss="" data-meta="MuiCssBaseline">
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #222;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: Roboto,"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fff;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+textarea {
+  font-family: inherit;
+}
+iframe {
+  margin: 0;
+  padding: 0;
+}
+svg {
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+.pickr, .pcr-app {
+  font-family: Roboto,"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.pickr *:focus, .pcr-app *:focus {
+  outline: none !important;
+}
+.pickr .pcr-save, .pcr-app .pcr-save {
+  color: #fff!important;
+  border: 1px solid #326690;
+  border-radius: 4px !important;
+  background-color: #326690!important;
+}
+.pickr .pcr-clear, .pcr-app .pcr-clear {
+  color: #222!important;
+  border: 1px solid #bac1cd;
+  border-radius: 4px !important;
+  background-color: #fff!important;
+}
+.uplot .u-legend {
+  display: none;
+}
+.uplot-tooltip {
+  color: #fff;
+  display: block;
+  padding: 4px 8px;
+  z-index: 9999;
+  position: absolute;
+  font-size: 0.9em;
+  border-radius: 4px;
+  background-color: #222;
+}
+.uplot-tooltip .uplot-tooltip-label {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+.dock-layout {
+  height: 100%;
+  border-top: 1px solid #dde0e6;
+}
+.dock-layout .dock-ink-bar {
+  color: #326690;
+  height: 2px;
+  background-color: #326690;
+}
+.dock-layout .dock-bar {
+  padding-left: 0;
+  border-bottom: 1px solid #dde0e6;
+  background-color: #fff;
+}
+.dock-layout .dock-panel {
+  border: none;
+}
+.dock-layout .dock-tab {
+  color: #222;
+  min-width: unset;
+  background: unset;
+  font-weight: unset;
+  margin-right: 0;
+  border-bottom: none;
+}
+.dock-layout .dock-extra-content {
+  align-items: center;
+  padding-right: 10px;
+}
+.dock-layout .dock-content-animated {
+  transition: none;
+}
+.dock-layout .dock-fbox {
+  z-index: 1060;
+}
+.dock-layout .dock-mbox {
+  z-index: 1080;
+}
+.dock-layout .drag-accept-reject::after {
+  content: ;
+}
+.dock-layout .dock-nav-more {
+  color: #222;
+}
+.dock-layout .dock-hbox .dock-divider, .dock-layout .dock-vbox .dock-hbox .dock-divider {
+  transform: scaleX(8);
+  flex-basis: 1px;
+}
+.dock-layout .dock-hbox .dock-divider::before, .dock-layout .dock-vbox .dock-hbox .dock-divider::before {
+  width: 1px;
+  height: 100%;
+  content: "";
+  display: block;
+  transform: scaleX(0.125);
+  background-color: #dde0e6;
+}
+.dock-layout .dock-vbox .dock-divider, .dock-layout .dock-hbox .dock-vbox .dock-divider {
+  transform: scaleY(8);
+  flex-basis: 1px;
+}
+.dock-layout .dock-vbox .dock-divider::before, .dock-layout .dock-hbox .dock-vbox .dock-divider::before {
+  width: 100%;
+  height: 1px;
+  content: "";
+  display: block;
+  transform: scaleY(0.125);
+  background-color: #dde0e6;
+}
+.dock-layout .dock-tab.dock-tab-active {
+  color: #326690;
+}
+.dock-layout .dock-tab::hover {
+  color: unset;
+}
+.dock-layout .dock-tab > div {
+  padding: 4px 10px;
+}
+.dock-layout .dock-tab .drag-initiator {
+  display: flex;
+}
+.dock-layout .dock-tab .drag-initiator .dock-tab-close-btn {
+  color: #222;
+  position: unset;
+  font-size: 18px;
+  transition: none;
+  margin-left: 8px;
+}
+.dock-layout .dock-tab .drag-initiator .dock-tab-close-btn::before {
+  top: -5px;
+  content: "\00d7";
+  position: relative;
+}
+.dock-layout .dock-tab > div:focus {
+  outline: 1px solid #326690;
+  outline-offset: -1px;
+}
+.dock-layout .dock-tab.dock-tab-active::hover {
+  color: #326690;
+}
+.dock-layout .dock-panel.dragging {
+  opacity: 0.6;
+}
+.dock-layout .dock-panel .dock {
+  border-radius: inherit;
+}
+.dock-layout .dock-panel.dock-style-dialogs {
+  border-radius: 4px;
+}
+.dock-layout .dock-panel .dock-tabpane {
+  color: #222;
+  background-color: #fff;
+}
+.dock-layout .dock-panel #id-schema-diff {
+  overflow-y: auto;
+}
+.dock-layout .dock-panel #id-results {
+  overflow-y: auto;
+}
+.dock-layout .dock-panel.dock-style-dialogs.dock-panel.dragging {
+  opacity: 1;
+  pointer-events: visible;
+}
+.dock-layout .dock-panel.dock-style-dialogs .dock-ink-bar {
+  height: 0px;
+}
+.dock-layout .dock-panel.dock-style-dialogs .dock-panel-drag-size-b-r {
+  z-index: 1020;
+}
+.dock-layout .dock-panel.dock-style-dialogs .dock-tab-active {
+  color: #222;
+  font-weight: bold;
+}
+.dock-layout .dock-panel.dock-style-dialogs .dock-nav-more {
+  display: none;
+}
+.dock-layout .dock-panel.dock-style-dialogs .dock-tab-active::hover {
+  color: #222;
+}
+.dock-layout .dock-panel.dock-style-object-explorer .dock-ink-bar {
+  height: 0px;
+}
+.dock-layout .dock-panel.dock-style-object-explorer .dock-tab-active {
+  color: #222;
+  cursor: move;
+}
+.dock-layout .dock-panel.dock-style-object-explorer .dock-tab-btn {
+  pointer-events: none;
+}
+.dock-layout .dock-panel.dock-style-object-explorer .dock-nav-more {
+  display: none;
+}
+.dock-layout .dock-panel.dock-style-object-explorer .dock-tab-active::hover {
+  color: #222;
+}
+.dock-layout .dock-panel.dock-style-playground:not([data-dockid="id-main"]) .dock-extra-content {
+  display: none;
+}
+.dock-layout .dock-bar .dock-nav-wrap {
+  cursor: move;
+}
+.dock-layout .dock-ink-bar.dock-ink-bar-animated {
+  transition: none !important;
+}
+.dock-dropdown {
+  z-index: 1004;
+}
+.dock-dropdown .dock-dropdown-menu {
+  color: #222;
+  border: 1px solid #dde0e6;
+  padding: 4px 0px;
+  background-color: #fff;
+}
+.dock-dropdown .dock-dropdown-menu-item {
+  color: #222;
+  display: flex;
+  padding: 3px 12px;
+  transition: none;
+}
+.dock-dropdown .dock-dropdown-menu-item.dock-dropdown-menu-item-active, .dock-dropdown .dock-dropdown-menu-item:hover {
+  color: #fff;
+  background-color: #326690;
+}
+</style><style data-jss="" data-meta="MuiInputBase">
+@-webkit-keyframes mui-auto-fill {}
+@-webkit-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: #222;
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  text-overflow: ellipsis;
+  letter-spacing: 0.00938em;
+  background-color: #fff;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-root.Mui-disabled {
+  background-color: #f3f5f9;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: unset;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  font-size: 14px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  background-color: #fff;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: none;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: none;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: none;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: none;
+}
+.MuiInputBase-input:focus {
+  outline: 0 !important;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+.MuiInputBase-input[readonly], .MuiInputBase-input.Mui-disabled {
+  color: #646B82;
+  background-color: #f3f5f9;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: unset;
+  resize: none;
+  padding: 0;
+  font-size: 14px;
+  background-color: #fff;
+}
+.MuiInputBase-inputMultiline[readonly], .MuiInputBase-inputMultiline.Mui-disabled {
+  color: #646B82;
+  background-color: #f3f5f9;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="MuiInputAdornment">
+.MuiInputAdornment-root {
+  height: 0.01em;
+  display: flex;
+  max-height: 2em;
+  align-items: center;
+  white-space: nowrap;
+}
+.MuiInputAdornment-filled.MuiInputAdornment-positionStart:not(.MuiInputAdornment-hiddenLabel) {
+  margin-top: 16px;
+}
+.MuiInputAdornment-positionStart {
+  margin-right: 8px;
+}
+.MuiInputAdornment-positionEnd {
+  margin-left: 8px;
+}
+.MuiInputAdornment-disablePointerEvents {
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="PrivateNotchedOutline">
+.jss24 {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.jss25 {
+  padding: 0;
+  text-align: left;
+  transition: none;
+  line-height: 11px;
+}
+.jss26 {
+  width: auto;
+  height: 11px;
+  display: block;
+  padding: 0;
+  font-size: 0.75em;
+  max-width: 0.01px;
+  text-align: left;
+  transition: none;
+  visibility: hidden;
+}
+.jss26 > span {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.jss27 {
+  max-width: 1000px;
+  transition: none;
+}
+</style><style data-jss="" data-meta="MuiOutlinedInput">
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: 4px;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #222;
+}
+@media (hover: none) {
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #326690;
+  border-width: 2px;
+}
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #CC0000;
+}
+.MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+.MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: #dde0e6;
+}
+.MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #f50057;
+}
+.MuiOutlinedInput-adornedStart {
+  padding-left: 14px;
+}
+.MuiOutlinedInput-adornedEnd {
+  padding-right: 6px;
+}
+.MuiOutlinedInput-marginDense {
+  height: 28px;
+}
+.MuiOutlinedInput-multiline {
+  padding: 0px;
+}
+.MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: #dde0e6;
+}
+.MuiOutlinedInput-input {
+  padding: 6px 12px;
+  border-radius: inherit;
+}
+.MuiOutlinedInput-input:-webkit-autofill {
+  border-radius: inherit;
+}
+.MuiOutlinedInput-inputMarginDense {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.MuiOutlinedInput-inputMultiline {
+  height: 100%;
+  resize: vertical;
+  padding: 6px 12px;
+  box-sizing: border-box;
+}
+.MuiOutlinedInput-inputAdornedStart {
+  padding-left: 0;
+}
+.MuiOutlinedInput-inputAdornedEnd {
+  padding-right: 0;
+}
+</style><style data-jss="" data-meta="MuiSelect">
+.MuiSelect-select {
+  cursor: pointer;
+  min-width: 16px;
+  user-select: none;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.MuiSelect-select:focus {
+  border-radius: 0;
+  background-color: unset;
+}
+.MuiSelect-select::-ms-expand {
+  display: none;
+}
+.MuiSelect-select.Mui-disabled {
+  cursor: default;
+}
+.MuiSelect-select[multiple] {
+  height: auto;
+}
+.MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+  background-color: #fff;
+}
+.MuiSelect-select.MuiSelect-select {
+  padding-right: 24px;
+}
+.MuiSelect-filled.MuiSelect-filled {
+  padding-right: 32px;
+}
+.MuiSelect-outlined {
+  border-radius: 4px;
+}
+.MuiSelect-outlined.MuiSelect-outlined {
+  padding-right: 32px;
+}
+.MuiSelect-selectMenu {
+  height: auto;
+  overflow: hidden;
+  min-height: unset;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiSelect-icon {
+  top: calc(50% - 12px);
+  color: #222;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.MuiSelect-icon.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSelect-icon.Mui-disabled {
+  color: #646B82;
+}
+.MuiSelect-iconOpen {
+  transform: rotate(180deg);
+}
+.MuiSelect-iconFilled {
+  right: 7px;
+}
+.MuiSelect-iconOutlined {
+  right: 7px;
+}
+.MuiSelect-nativeInput {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper {
+  top: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+  top: 0;
+  left: 0;
+  margin-top: -0.71em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+  left: 0;
+  bottom: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.71em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+  left: 0;
+  width: 0.71em;
+  height: 1em;
+  margin-top: 4px;
+  margin-left: -0.71em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+  right: 0;
+  width: 0.71em;
+  height: 1em;
+  margin-top: 4px;
+  margin-right: -0.71em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+  transform-origin: 0 0;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+  transform-origin: 100% 100%;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+  transform-origin: 100% 0;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+  transform-origin: 0 100%;
+}
+.MuiTooltip-tooltip {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: Roboto,"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: #222;
+}
+.MuiTooltip-tooltipArrow {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow {
+  color: #222;
+  width: 1em;
+  height: 0.71em;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+}
+.MuiTooltip-arrow::before {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  content: "";
+  display: block;
+  transform: rotate(45deg);
+  background-color: currentColor;
+}
+.MuiTooltip-touch {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss7 {
+  border: 1px solid #326690;
+}
+.jss7.Mui-disabled {
+  color: #fff !important;
+  background-color: #326690;
+}
+.jss7:hover {
+  border-color: rgb(37, 76, 108);
+  background-color: rgb(37, 76, 108);
+}
+.jss8 {
+  color: #222;
+  border: 1px solid #bac1cd;
+  white-space: nowrap;
+  background-color: #fff;
+}
+.jss8.Mui-disabled {
+  color: #222 !important;
+  border-color: #bac1cd;
+}
+.jss8:hover {
+  color: #222;
+  border-color: #bac1cd;
+  background-color: #ebeef3;
+}
+.jss9 {
+  padding: 2px 4px;
+  min-width: 0;
+}
+.jss9.MuiButton-sizeSmall, .jss9.MuiButton-outlinedSizeSmall, .jss9.MuiButton-containedSizeSmall {
+  padding: 1px 4px;
+}
+.jss10 {
+  color: #222;
+  border-color: #bac1cd;
+  background-color: #fff;
+}
+.jss10.Mui-disabled {
+  color: #222;
+  border-color: #bac1cd;
+  background-color: #fff;
+}
+.jss10:hover {
+  color: #222;
+  border-color: #bac1cd;
+  background-color: #ebeef3;
+}
+.jss11.MuiButton-sizeSmall, .jss11.MuiButton-outlinedSizeSmall, .jss11.MuiButton-containedSizeSmall {
+  width: 20px;
+}
+.jss11.MuiButton-sizeSmall svg, .jss11.MuiButton-outlinedSizeSmall svg, .jss11.MuiButton-containedSizeSmall svg {
+  height: 0.8em;
+}
+.jss12 {
+  height: 24px;
+  padding: 2px 1px;
+  min-width: 24px;
+}
+.jss12 .MuiSvgIcon-root {
+  height: 0.8em;
+}
+.MuiButtonGroup-root .jss12 {
+  min-width: 30px;
+}
+.jss13 {
+  color: #222;
+  border: 0;
+  background-color: transparent;
+}
+.jss13:hover {
+  color: #222;
+  border: 0;
+  filter: brightness(85%);
+  background-color: inherit;
+}
+.jss13.Mui-disabled {
+  border: 0;
+}
+.jss14 {
+  color: #fff;
+  background-color: #326690;
+}
+.jss14:hover {
+  color: #fff;
+  border-color: rgb(37, 76, 108);
+  background-color: rgb(37, 76, 108);
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss45 {
+  position: relative;
+}
+.jss46 .CodeMirror-cursors {
+  display: none;
+}
+.jss47 {
+  right: 4px;
+  width: 250px;
+  border: 1px solid #dde0e6;
+  padding: 2px 4px;
+  z-index: 99;
+  position: absolute;
+  border-top: none;
+  background-color: #fff;
+}
+.jss48 {
+  margin-top: 0.25rem;
+}
+.jss49 {
+  right: 4px;
+  width: 66px;
+  z-index: 99;
+  position: absolute;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss18 .szh-menu {
+  color: #222;
+  border: 1px solid #dde0e6;
+  padding: 4px 0px;
+  z-index: 1005;
+  background-color: #fff;
+}
+.jss18 .szh-menu__divider {
+  margin: 0;
+  background: #dde0e6;
+}
+.jss18 .szh-menu__item {
+  display: flex;
+  padding: 3px 12px;
+}
+.jss18 .szh-menu__item:after {
+  right: 0.75rem;
+}
+.jss18 .szh-menu__item.szh-menu__item--active, .jss18 .szh-menu__item.szh-menu__item--hover {
+  color: #fff;
+  background-color: #326690;
+}
+.jss19 {
+  width: 1.3rem;
+}
+.jss20 {
+  visibility: hidden;
+}
+.jss21 {
+  font-size: 0.8em;
+  margin-left: auto;
+  padding-left: 12px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss53 {
+  top: 0;
+  left: 0;
+  color: #fff;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 1000;
+  position: absolute;
+  background-color: rgba(9, 13, 17, 0.6);
+}
+.jss54 {
+  color: #fff;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  .-mui-typography-root: [object Object];
+}
+.jss55 {
+  color: #fff;
+}
+.jss56 {
+  font-size: 16px;
+  margin-left: 0.5rem;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss57 {
+  color: #222;
+  height: 100%;
+  margin: 24px auto 12px;
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss60 {
+  width: 100%;
+  border: 1px solid #dde0e6;
+  overflow: auto;
+  border-spacing: 0;
+  background-color: #fff;
+}
+.jss60 tbody td, .jss60 thead th {
+  border: 1px solid #dde0e6;
+  margin: 0;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+  max-width: 250px;
+  user-select: text;
+  white-space: nowrap;
+  border-bottom: none;
+  text-overflow: ellipsis;
+}
+.jss60 thead tr:first-of-type th {
+  border-top: none;
+}
+.jss60 th {
+  padding: 8px 4px;
+  text-align: left;
+  font-weight: 700;
+}
+.jss60 tbody > tr:hover {
+  background-color: #d6effc;
+}
+.jss60 tbody > tr:hover td {
+  border-top: 1px solid #326690;
+  border-bottom: 1px solid #326690;
+}
+.jss60 tbody > tr:hover:last-of-type td {
+  border-bottom-color: #326690;
+}
+.jss60 tbody tr:last-of-type:hover td {
+  border-bottom-color: #326690;
+}
+.jss60 tbody tr:last-of-type td {
+  border-bottom-color: #dde0e6;
+}
+.jss60 tbody td:first-of-type, .jss60 thead th:first-of-type {
+  border-left: none;
+}
+.jss61 {
+  border: 0;
+}
+.jss62 tbody tr:last-of-type td {
+  border-bottom: 1px solid #dde0e6;
+}
+.jss63 tbody td {
+  white-space: pre-wrap;
+}
+.jss64 tbody > tr:hover {
+  background-color: #fff;
+}
+.jss64 tbody > tr:hover td {
+  border-top-color: #dde0e6;
+  border-bottom-color: #dde0e6;
+}
+.jss64 tbody > tr:hover:last-of-type td {
+  border-bottom-color: #dde0e6;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss44 {
+  height: 100%;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss2 {
+  gap: 4px;
+  display: flex;
+  padding: 2px 4px;
+  align-items: center;
+  background-color: #ebeef3;
+}
+.jss3 {
+  color: #222;
+  width: 450px;
+  border: 1px solid #bac1cd;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+.jss4 {
+  padding: 0px 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.jss5 .szh-menu {
+  min-width: 450px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss51 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss37 {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #dde0e6;
+  align-items: center;
+  user-select: text;
+  background-color: #ebeef3;
+}
+.jss38 {
+  padding: 2px 12px;
+}
+.jss39 {
+  border-right: 1px solid #dde0e6;
+}
+.jss40 {
+  margin-left: auto;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss22 {
+  gap: 4px;
+  display: flex;
+  padding: 2px 4px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #dde0e6;
+  background-color: #ebeef3;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss59 {
+  color: #222;
+  height: 100%;
+  padding: 5px 10px;
+  overflow: auto;
+  font-size: 12px;
+  font-family: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  user-select: text;
+  white-space: pre-wrap;
+  background-color: #fff;
+}
+</style><style>.dock-tab:not(div.dock-tab-active) { max-width: 180px; }</style></head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<style>
+    body {padding: 0px;}
+    #sqleditor-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #sqleditor-container:not(:empty) + .pg-sp-container {
+        display: none;
+    }
+</style>
+<div id="sqleditor-container"><div class="MuiBox-root jss1" tabindex="0"><div class="MuiBox-root jss6 jss2"><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="The session is idle and there is no current transaction." title="The session is idle and there is no current transaction." aria-label="The session is idle and there is no current transaction."><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1033.2 1000" class="MuiSvgIcon-root" data-label="ConnectedIcon" style="height: 1rem;"><path d="M1029.1 70.6c5.5-5.5 5.5-11.1 0-16.6-16.6-11.1-38.8-33.2-55.4-49.9-5.5-5.5-11.1-5.5-16.6 0L840.8 120.4l-11.1-11.1c-72.1-83-194-99.6-293.7-44.2-33.2 22.2-66.5 49.9-94.2 83.1l-33.2 27.7c-5.5-11.1-16.6-22.2-27.7-27.7-11.1-11.1-5.5-5.5-11.1 0l-55.4 55.4c-5.5 5.5-5.5 11.1 0 16.6C353.2 259 392 297.8 430.7 331c5.5 5.5 5.5 11.1 0 16.6l-83.1 77.6c-66.5-60.9-116.3-116.3-138.5-133-5.5-11.1-11.1-11.1-16.6-5.5-16.6 22.2-33.2 38.8-49.9 55.4-5.5 5.5-5.5 11.1 0 16.6l33.2 33.2c-27.7 27.7-55.4 49.9-77.6 72-60.9 55.4-83.1 144-60.9 221.6 11.1 49.9 38.8 88.6 72 121.9 5.5 5.5 5.5 11.1 0 16.6L4 929.3c-5.5 5.5-5.5 11.1 0 16.6l49.9 49.9c5.5 5.5 11.1 5.5 16.6 0l88.6-88.6c5.5-5.5 16.6-22.2 27.7-22.2s16.6 11.1 27.7 22.2c88.6 88.6 232.7 88.6 321.3 0 27.7-27.7 49.9-55.4 77.6-83.1 11.1 16.6 22.2 22.2 33.2 33.2 11.1 11.1 5.5 5.5 11.1 0l49.9-49.9c5.5-5.5 11.1-11.1 0-16.6-27.7-27.7-66.5-60.9-105.3-105.3 27.7-27.7 55.4-55.4 77.6-83.1 5.5-5.5 11.1-5.5 16.6 0L813 718.8c5.5 5.5 11.1 5.5 11.1 0l55.4-55.4c5.5-5.5 5.5-5.5 0-11.1l-27.7-38.8c27.7-22.2 55.4-49.9 77.6-72 55.4-49.9 77.6-127.4 66.5-205-5.5-55.4-33.2-105.3-77.6-138.5-5.5-5.5-5.5-11.1 0-16.6 38.8-33.2 72-72 110.8-110.8zM541.6 768.7c-22.2 22.2-44.3 49.9-72 72-55.4 55.4-144 55.4-199.4 0-33.2-27.8-48.6-44.9-99.7-99.7-57.2-53.5-66.5-144-16.6-199.4l16.6-16.6c22.2-22.2 44.3-44.3 66.5-72l304.7 304.7c5.4 5.5 5.4 5.5-.1 11zm72-238.2L536 613.6 414.1 491.7l77.6-83.1c5.5-5.5 11.1-11.1 16.6 0l105.3 105.3c11.1 11 11.1 11 0 16.6zm254.8-55.4-5.5 5.5-66.5 66.5-315.8-310.3 77.6-72c55.4-49.9 138.5-55.4 193.9-5.5 38.8 38.8 77.6 83.1 116.3 121.9 55.4 55.4 55.4 144 0 193.9z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined jss3 MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-state="closed"><span class="MuiButton-label"><div class="MuiBox-root jss15" title=""><div class="MuiBox-root jss16">ny_taxi/postgres@docker localhost</div><div class="MuiBox-root jss17"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></div></div></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="New query tool for current connection" aria-label="New query tool for current connection"><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" class="MuiSvgIcon-root" data-label="QueryToolIcon" style="height: 1rem;"><path d="M13.1 9.2c.4-.3.6-.6.6-.9v-3c-1.1.7-2.9 1.2-4.8 1.3l4.2 2.6zM7.2 5.8c3.6 0 6.5-1 6.5-2.1V2.4c0-1.2-2.9-2.1-6.5-2.1S.7 1.3.7 2.4v1.3c0 1.2 2.9 2.1 6.5 2.1zM.7 10v3c0 1.2 2.9 2.1 6.5 2.1h.2v-3.7h-.2c-2.6 0-5.1-.4-6.5-1.4zM.7 5.4v3c0 1.2 2.9 2.1 6.5 2.1h.2v-3c0-.3.1-.6.3-.7h-.6c-2.5 0-5-.5-6.4-1.4zM14.9 11.2 9.4 8c-.4-.3-1.1-.1-1.1.6V15c0 .6.6.9 1.1.6l5.5-3.2c.5-.2.5-.9 0-1.2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div role="group" class="MuiButtonGroup-root" style="margin-left: auto;"><button class="MuiButtonBase-root MuiButton-root MuiButton-text jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedText MuiButtonGroup-groupedTextHorizontal MuiButtonGroup-groupedText MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Reset layout" title="Reset layout" aria-label="Reset layout"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.56 7.98C6.1 7.52 5.31 7.6 5 8.17c-.28.51-.5 1.03-.67 1.58-.19.63.31 1.25.96 1.25h.01c.43 0 .82-.28.94-.7.12-.4.28-.79.48-1.17.22-.37.15-.84-.16-1.15zM5.31 13h-.02c-.65 0-1.15.62-.96 1.25.16.54.38 1.07.66 1.58.31.57 1.11.66 1.57.2.3-.31.38-.77.17-1.15-.2-.37-.36-.76-.48-1.16-.12-.44-.51-.72-.94-.72zm2.85 6.02c.51.28 1.04.5 1.59.66.62.18 1.24-.32 1.24-.96v-.03c0-.43-.28-.82-.7-.94-.4-.12-.78-.28-1.15-.48-.38-.21-.86-.14-1.16.17l-.03.03c-.45.45-.36 1.24.21 1.55zM13 4.07v-.66c0-.89-1.08-1.34-1.71-.71L9.17 4.83c-.4.4-.4 1.04 0 1.43l2.13 2.08c.63.62 1.7.17 1.7-.72V6.09c2.84.48 5 2.94 5 5.91 0 2.73-1.82 5.02-4.32 5.75-.41.12-.68.51-.68.94v.02c0 .65.61 1.14 1.23.96C17.57 18.71 20 15.64 20 12c0-4.08-3.05-7.44-7-7.93z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="szh-menu-container jss18 jss5"><ul role="menu" aria-label="Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="ny_taxi/postgres@docker localhost" data-checked="true" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>ny_taxi/postgres@docker localhost</li><li role="menuitem" tabindex="-1" data-label="&lt; New Connection... &gt;" data-checked="false" class="szh-menu__item">&lt; New Connection... &gt;</li></ul></div><div class="MuiBox-root jss23 jss22"><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Open File" accesskey="O" aria-label="Open File"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.59 4.59C10.21 4.21 9.7 4 9.17 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-1.41-1.41z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Save File" accesskey="S" aria-label="Save File"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.59 3.59c-.38-.38-.89-.59-1.42-.59H5c-1.11 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7.83c0-.53-.21-1.04-.59-1.41l-2.82-2.83zM12 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm1-10H7c-1.1 0-2-.9-2-2s.9-2 2-2h6c1.1 0 2 .9 2 2s-.9 2-2 2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="File" name="menu-saveas" title="File" aria-label="File" data-state="closed"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Edit" name="menu-edit" title="Edit" aria-label="Edit" data-state="closed"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.46v3.04c0 .28.22.5.5.5h3.04c.13 0 .26-.05.35-.15L17.81 9.94l-3.75-3.75L3.15 17.1c-.1.1-.15.22-.15.36zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="margin-left: -10px;"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" data-label="Sort/Filter" accesskey="F"><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="MuiSvgIcon-root" data-label="FilterIcon"><path fill="none" d="M0 0h24m0 24H0"></path><path d="M4.25 5.61C6.57 8.59 10 13 10 13v5c0 1.1.9 2 2 2s2-.9 2-2v-5s3.43-4.41 5.75-7.39c.51-.66.04-1.61-.8-1.61H5.04c-.83 0-1.3.95-.79 1.61z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" data-label="Filter options" accesskey="I" name="menu-filter" data-state="closed"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></span></button></div><div class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled"><select class="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled Mui-disabled" disabled=""><option value="-1">No limit</option><option value="1000">1000 rows</option><option value="500">500 rows</option><option value="100">100 rows</option></select><svg class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined Mui-disabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><fieldset aria-hidden="true" class="jss24 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss25" style="width: 0.01px;"><span>​</span></legend></fieldset></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" data-label="Cancel query" accesskey="Q"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: unset;"><path d="M8 6h8c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"></path></svg></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Execute script" aria-label="Execute script"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: unset;"><path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Execute options" accesskey="D" name="menu-autocommit" aria-label="Execute options" data-state="closed"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Explain" aria-label="Explain"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 6h-3v2h3c.55 0 1 .45 1 1s-.45 1-1 1h-3v2h3c.55 0 1 .45 1 1s-.45 1-1 1h-4c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Explain Analyze" aria-label="Explain Analyze"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 17c-.55 0-1-.45-1-1v-5c0-.55.45-1 1-1s1 .45 1 1v5c0 .55-.45 1-1 1zm4 0c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1s1 .45 1 1v8c0 .55-.45 1-1 1zm4 0c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1v2c0 .55-.45 1-1 1z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Explain Settings" name="menu-explain" aria-label="Explain Settings" data-state="closed" title="Explain Settings"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" data-label="Commit"><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 48 48" class="MuiSvgIcon-root" data-label="CommitIcon" style="height: 1.2rem;"><path d="M5.42 15.76A21.75 21.75 0 0 0 12 18a47.55 47.55 0 0 0 9.06.81h1a16.63 16.63 0 0 1 14.8-3.11c1.48-.89 2.23-1.85 2.23-2.89v-3c0-1.08-.81-2.08-2.42-3a22 22 0 0 0-6.58-2.19 47.44 47.44 0 0 0-9-.81 47.55 47.55 0 0 0-9.09.73 22 22 0 0 0-6.58 2.19C3.81 7.66 3 8.66 3 9.74v3c0 1.09.81 2.1 2.42 3.02ZM15.89 30.58a45.4 45.4 0 0 1-5.25-.77 20.41 20.41 0 0 1-7.64-3v4c0 1.08.81 2.08 2.42 3A22 22 0 0 0 12 36a44.81 44.81 0 0 0 4.56.62 16.69 16.69 0 0 1-.73-4.87c0-.38.03-.75.06-1.17ZM3 17.8v4c0 1.08.81 2.09 2.42 3A21.75 21.75 0 0 0 12 27c1.4.27 2.86.47 4.38.61a16.74 16.74 0 0 1 2.81-5.86 50 50 0 0 1-8.55-1A20.58 20.58 0 0 1 3 17.8ZM32.3 18.88A12.7 12.7 0 1 0 45 31.58a12.74 12.74 0 0 0-12.7-12.7Zm7.94 10-9.36 9.36a1 1 0 0 1-1.11.16l-5.4-5.4a.76.76 0 0 1 0-1.11l1.11-1.27a.76.76 0 0 1 1.11 0l3.65 3.65L38 26.65a.78.78 0 0 1 1.11 0l1.11 1.12a.76.76 0 0 1 .02 1.11Z" class="commit_svg__cls-1"></path></svg></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" data-label="Rollback"><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 48 48" class="MuiSvgIcon-root" data-label="RollbackIcon" style="height: 1.2rem;"><path d="M5.42 15.76A21.75 21.75 0 0 0 12 18a47.55 47.55 0 0 0 9.06.81h1a16.63 16.63 0 0 1 14.8-3.11c1.48-.89 2.23-1.85 2.23-2.89v-3c0-1.08-.81-2.08-2.42-3a22 22 0 0 0-6.58-2.19 47.44 47.44 0 0 0-9-.81 47.55 47.55 0 0 0-9.09.73 22 22 0 0 0-6.58 2.19C3.81 7.66 3 8.66 3 9.74v3c0 1.09.81 2.1 2.42 3.02ZM15.89 30.58a45.4 45.4 0 0 1-5.25-.77 20.34 20.34 0 0 1-7.64-3v4c0 1.08.81 2.08 2.42 3A22 22 0 0 0 12 36a44.81 44.81 0 0 0 4.56.62 16.69 16.69 0 0 1-.73-4.87c0-.38.03-.75.06-1.17ZM3 17.8v4c0 1.08.81 2.09 2.42 3A21.75 21.75 0 0 0 12 27c1.4.27 2.86.47 4.38.61a16.74 16.74 0 0 1 2.81-5.86 50 50 0 0 1-8.55-1A20.51 20.51 0 0 1 3 17.8ZM32.3 18.88A12.7 12.7 0 1 0 45 31.58a12.74 12.74 0 0 0-12.7-12.7Zm5.93 20.69a.63.63 0 0 1-1-.66c1.61-5.16-.77-6.52-6.28-6.6v3.12a.85.85 0 0 1-1.41.65l-6.26-5.41a.86.86 0 0 1 0-1.29L29.55 24a.85.85 0 0 1 1.41.65v2.84c5.71.07 10.24 1.21 10.24 6.62a7.25 7.25 0 0 1-2.97 5.46Z" class="rollback_svg__cls-1"></path></svg></span></button></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Macros" name="menu-macros" aria-label="Macros" data-state="closed" title="Macros"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h12c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1s.45 1 1 1zm12 10H8c-.55 0-1 .45-1 1s.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1zm0-6H8c-.55 0-1 .45-1 1s.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1zM4.5 16h-2c-.28 0-.5.22-.5.5s.22.5.5.5H4v.5h-.5c-.28 0-.5.22-.5.5s.22.5.5.5H4v.5H2.5c-.28 0-.5.22-.5.5s.22.5.5.5h2c.28 0 .5-.22.5-.5v-3c0-.28-.22-.5-.5-.5zm-2-11H3v2.5c0 .28.22.5.5.5s.5-.22.5-.5v-3c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5s.22.5.5.5zm2 5h-2c-.28 0-.5.22-.5.5s.22.5.5.5h1.3l-1.68 1.96c-.08.09-.12.21-.12.32v.22c0 .28.22.5.5.5h2c.28 0 .5-.22.5-.5s-.22-.5-.5-.5H3.2l1.68-1.96c.08-.09.12-.21.12-.32v-.22c0-.28-.22-.5-.5-.5z"></path></svg><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="margin-left: -10px;"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div role="group" class="MuiButtonGroup-root"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button" data-label="Help" aria-label="Help" title="Help"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92c-.5.51-.86.97-1.04 1.69-.08.32-.13.68-.13 1.14h-2v-.5c0-.46.08-.9.22-1.31.2-.58.53-1.1.95-1.52l1.24-1.26c.46-.44.68-1.1.55-1.8-.13-.72-.69-1.33-1.39-1.53-1.11-.31-2.14.32-2.47 1.27-.12.37-.43.65-.82.65h-.3C8.4 9 8 8.44 8.16 7.88c.43-1.47 1.68-2.59 3.23-2.83 1.52-.24 2.97.55 3.87 1.8 1.18 1.63.83 3.38-.19 4.4z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="szh-menu-container jss18"><ul role="menu" aria-label="File Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="Save as" data-checked="false" class="szh-menu__item">Save as</li></ul></div><div class="szh-menu-container jss18"><ul role="menu" aria-label="Edit Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="Find" data-checked="false" class="szh-menu__item">Find<div class="jss21">(Cmd + F)</div></li><li role="menuitem" tabindex="-1" data-label="Replace" data-checked="false" class="szh-menu__item">Replace<div class="jss21">(Option + Cmd + F)</div></li><li role="menuitem" tabindex="-1" data-label="Jump" data-checked="false" class="szh-menu__item">Jump<div class="jss21">(Option + G)</div></li><li role="separator" class="szh-menu__divider"></li><li role="menuitem" tabindex="-1" data-label="Indent Selection" data-checked="false" class="szh-menu__item">Indent Selection<div class="jss21">(Tab)</div></li><li role="menuitem" tabindex="-1" data-label="Unindent Selection" data-checked="false" class="szh-menu__item">Unindent Selection<div class="jss21">(Shift + Tab)</div></li><li role="menuitem" tabindex="-1" data-label="Toggle Comment" data-checked="false" class="szh-menu__item">Toggle Comment<div class="jss21">(Cmd + /)</div></li><li role="menuitem" tabindex="-1" data-label="Toggle Case Of Selected Text" data-checked="false" class="szh-menu__item">Toggle Case Of Selected Text<div class="jss21">(Ctrl + Shift + U)</div></li><li role="menuitem" tabindex="-1" data-label="Clear Query" data-checked="false" class="szh-menu__item">Clear Query<div class="jss21">(Option + Ctrl + L)</div></li><li role="separator" class="szh-menu__divider"></li><li role="menuitem" tabindex="-1" data-label="Format SQL" data-checked="false" class="szh-menu__item">Format SQL<div class="jss21">(Ctrl + Shift + K)</div></li></ul></div><div class="szh-menu-container jss18"><ul role="menu" aria-label="Filter Options Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="Filter by Selection" data-checked="false" class="szh-menu__item">Filter by Selection</li><li role="menuitem" tabindex="-1" data-label="Exclude by Selection" data-checked="false" class="szh-menu__item">Exclude by Selection</li><li role="menuitem" tabindex="-1" data-label="Remove Sort/Filter" data-checked="false" class="szh-menu__item">Remove Sort/Filter</li></ul></div><div class="szh-menu-container jss18"><ul role="menu" aria-label="Execute Options Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="Auto commit?" data-checked="true" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style=""><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Auto commit?</li><li role="menuitem" tabindex="-1" data-label="Auto rollback on error?" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Auto rollback on error?</li></ul></div><div class="szh-menu-container jss18"><ul role="menu" aria-label="Explain Options Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="Verbose" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Verbose</li><li role="menuitem" tabindex="-1" data-label="Costs" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Costs</li><li role="menuitem" tabindex="-1" data-label="Buffers" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Buffers</li><li role="menuitem" tabindex="-1" data-label="Timing" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Timing</li><li role="menuitem" tabindex="-1" data-label="Summary" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Summary</li><li role="menuitem" tabindex="-1" data-label="Settings" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Settings</li><li role="menuitem" tabindex="-1" data-label="Wal" data-checked="false" class="szh-menu__item"><svg class="MuiSvgIcon-root jss19" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-label="CheckIcon" style="visibility: hidden;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>Wal</li></ul></div><div class="szh-menu-container jss18"><ul role="menu" aria-label="Macros Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" tabindex="-1" data-label="Manage macros" data-checked="false" class="szh-menu__item">Manage macros</li><li role="separator" class="szh-menu__divider"></li></ul></div><div class="dock-layout" style="height: 100%;"><div class="dock-box dock-vbox" data-dockid="+1" style="min-width: 404px; min-height: 6px; flex: 200 1e+06 200px;"><div class="dock-box dock-hbox" data-dockid="+2" style="min-width: 404px; min-height: 1px; flex: 453 1e+06 453px;"><div class="dock-panel dock-style-default" data-dockid="+3" style="min-width: 200px; min-height: 1px; flex: 200 1e+06 200px;"><div class="dock dock-top"><div class="dock-bar drag-initiator" role="tablist" tabindex="-1"><div role="tablist" class="dock-nav"><div class="dock-nav-wrap"><div class="dock-nav-list" style="transform: translate(0px, 0px);"><div class="dock-tab dock-tab-active"><div role="tab" aria-selected="true" class="dock-tab-btn" tabindex="0" id="rc-tabs-0-tab-id-query" aria-controls="rc-tabs-0-panel-id-query"><div class="drag-initiator" role="tab" aria-selected="true"><div class="MuiBox-root jss28" title="Query"><span data-visible="true" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Query</span></div><div class="dock-tab-hit-area"></div></div></div></div><div class="dock-tab"><div role="tab" aria-selected="false" class="dock-tab-btn" tabindex="0" id="rc-tabs-0-tab-id-history" aria-controls="rc-tabs-0-panel-id-history"><div class="drag-initiator" role="tab" aria-selected="false"><div class="MuiBox-root jss29" title="Query History"><span data-visible="true" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Query History</span></div><div class="dock-tab-hit-area"></div></div></div></div><div class="dock-ink-bar dock-ink-bar-animated" style="left: 0px; width: 0px;"></div></div></div><div class="dock-nav-operations dock-nav-operations-hidden"><button type="button" class="dock-nav-more" tabindex="-1" aria-hidden="true" aria-haspopup="listbox" aria-controls="rc-tabs-0-more-popup" id="rc-tabs-0-more" aria-expanded="false" style="visibility: hidden; order: 1;"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: 0.9em; margin-top: 4px;"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button></div><div class="dock-extra-content"><div class="MuiBox-root jss30"></div></div></div></div><div class="dock-content-holder"><div class="dock-content dock-content-top dock-content-animated"><div id="id-query" role="tabpanel" aria-hidden="false" class="dock-tabpane dock-tabpane-active" aria-labelledby="rc-tabs-0-tab-id-query"><div class="dock-pane-cache"><div class="jss44 jss45"><div class="MuiBox-root jss65 jss47" tabindex="0"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd" title="Find text"><input autocomplete="nope" placeholder="Find text" rows="4" type="text" maxlength="255" data-testid="input-text" title="Find text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd" value=""><div class="MuiInputAdornment-root MuiInputAdornment-positionEnd"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss12 jss13" tabindex="0" type="button" data-label="Match case" data-test="case" title="Match case" aria-label="Match case" style="margin-right: 2px;"><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24" class="MuiSvgIcon-root" data-label="FormatCaseIcon"><path fill="currentColor" d="M20.06 18a3.99 3.99 0 0 1-.2-.89c-.67.7-1.48 1.05-2.41 1.05-.83 0-1.52-.24-2.05-.71-.53-.45-.8-1.06-.8-1.79 0-.88.33-1.56 1-2.05.67-.49 1.61-.73 2.83-.73h1.4v-.64c0-.49-.15-.88-.45-1.17-.3-.29-.75-.43-1.33-.43-.52 0-.95.12-1.3.36-.35.25-.52.54-.52.89h-1.46c0-.43.15-.84.45-1.24.28-.4.71-.71 1.22-.94.51-.21 1.06-.35 1.69-.35.98 0 1.74.24 2.29.73s.84 1.16.86 2.02V16c0 .8.1 1.42.3 1.88V18h-1.52m-2.4-1.12c.45 0 .88-.11 1.29-.32.4-.21.7-.49.88-.83v-1.57H18.7c-1.77 0-2.66.47-2.66 1.41 0 .43.15.73.46.96.3.23.68.35 1.16.35m-12.2-3.17h4.07L7.5 8.29l-2.04 5.42M6.64 6h1.72l4.71 12h-1.93l-.97-2.57H4.82L3.86 18H1.93L6.64 6z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss12 jss13" tabindex="0" type="button" data-label="Use regex" data-test="regex" title="Use regex" aria-label="Use regex"><span class="MuiButton-label"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" aria-hidden="true" viewBox="0 0 24 24" class="MuiSvgIcon-root" data-label="RegexIcon"><path fill="currentColor" d="M16 16.92c-.33.05-.66.08-1 .08-.34 0-.67-.03-1-.08v-3.51l-2.5 2.48c-.5-.39-1-.89-1.39-1.39l2.48-2.5H9.08c-.05-.33-.08-.66-.08-1 0-.34.03-.67.08-1h3.51l-2.48-2.5c.19-.25.39-.5.65-.74.24-.26.49-.46.74-.65L14 8.59V5.08c.33-.05.66-.08 1-.08.34 0 .67.03 1 .08v3.51l2.5-2.48c.5.39 1 .89 1.39 1.39L17.41 10h3.51c.05.33.08.66.08 1 0 .34-.03.67-.08 1h-3.51l2.48 2.5c-.19.25-.39.5-.65.74-.24.26-.49.46-.74.65L16 13.41v3.51M5 19a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><fieldset aria-hidden="true" class="jss24 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss25" style="width: 0.01px;"><span>​</span></legend></fieldset></div><div class="MuiBox-root jss66 jss48"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss12 jss13" tabindex="0" type="button" data-label="Previous" title="Previous" aria-label="Previous" style="margin-right: 2px;"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 19V7.83l4.88 4.88c.39.39 1.03.39 1.42 0 .39-.39.39-1.02 0-1.41l-6.59-6.59a.9959.9959 0 00-1.41 0l-6.6 6.58c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L11 7.83V19c0 .55.45 1 1 1s1-.45 1-1z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss12 jss13" tabindex="0" type="button" data-label="Next" title="Next" aria-label="Next" style="margin-right: 2px;"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41a.9959.9959 0 00-1.41 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><div class="MuiBox-root jss67"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss12 jss13" tabindex="0" type="button" data-label="Close" title="Close" aria-label="Close"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71a.9959.9959 0 00-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div><div class="MuiBox-root jss50 jss49"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8" tabindex="0" type="button" data-label="Copy"><span class="MuiButton-label">Copy</span><span class="MuiTouchRipple-root"></span></button></div><textarea title="SQL editor" style="display: none;"></textarea><div class="CodeMirror cm-s-default" translate="no" style="clip-path: inset(0px); font-size: 1em;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 371.531px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="SQL editor" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 34px; margin-bottom: -16px; border-right-width: 34px; min-height: 48px; min-width: 511.562px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 337.531px; top: 0px; width: 59.875px; height: 20px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -34px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> <span class="cm-keyword">index</span><span class="cm-punctuation">,</span> "LocationID"<span class="cm-punctuation">,</span> "Borough"<span class="cm-punctuation">,</span> <span class=" CodeMirror-selectedtext">"Zone"</span><span class="cm-punctuation CodeMirror-selectedtext">,</span> service_zone</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -34px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">FROM</span> <span class="cm-keyword">public</span><span class="cm-variable-2">.zones</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 48px;"></div><div class="CodeMirror-gutters" style="height: 82px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 21px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></div></div></div><div id="id-history" role="tabpanel" aria-hidden="true" class="dock-tabpane" aria-labelledby="rc-tabs-0-tab-id-history" style="visibility: hidden; height: 0px; overflow-y: hidden;"></div></div></div></div></div><div class="dock-divider drag-initiator"></div><div class="dock-panel dock-style-default" data-dockid="+4" style="min-width: 200px; min-height: 1px; flex: 75 1e+06 75px;"><div class="dock dock-top"><div class="dock-bar drag-initiator" role="tablist" tabindex="-1"><div role="tablist" class="dock-nav"><div class="dock-nav-wrap"><div class="dock-nav-list" style="transform: translate(0px, 0px);"><div class="dock-tab dock-tab-active"><div role="tab" aria-selected="true" class="dock-tab-btn" tabindex="0" id="rc-tabs-1-tab-id-scratch" aria-controls="rc-tabs-1-panel-id-scratch"><div class="drag-initiator" role="tab" aria-selected="true"><div class="MuiBox-root jss31" title="Scratch Pad"><span data-visible="true" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Scratch Pad</span><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined jss8 jss9 jss10 jss12 jss13" tabindex="0" type="button" data-label="Close" title="Close" aria-label="Close" style="margin: -1px -10px -1px 0px;"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: 0.7em;"><path d="M18.3 5.71a.9959.9959 0 00-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 00-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div class="dock-tab-hit-area"></div></div></div></div><div class="dock-ink-bar dock-ink-bar-animated" style="left: 0px; width: 0px;"></div></div></div><div class="dock-nav-operations dock-nav-operations-hidden"><button type="button" class="dock-nav-more" tabindex="-1" aria-hidden="true" aria-haspopup="listbox" aria-controls="rc-tabs-1-more-popup" id="rc-tabs-1-more" aria-expanded="false" style="visibility: hidden; order: 1;"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: 0.9em; margin-top: 4px;"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button></div><div class="dock-extra-content"><div class="MuiBox-root jss32"></div></div></div></div><div class="dock-content-holder"><div class="dock-content dock-content-top dock-content-animated"><div id="id-scratch" role="tabpanel" aria-hidden="false" class="dock-tabpane dock-tabpane-active" aria-labelledby="rc-tabs-1-tab-id-scratch"><div class="dock-pane-cache"><textarea title="Scratch Pad" style="border: 0px; height: 100%; width: 100%; resize: none;"></textarea></div></div></div></div></div></div></div><div class="dock-divider drag-initiator"></div><div class="dock-panel dock-style-default" data-dockid="+6" style="min-width: 200px; min-height: 1px; flex: 383 1e+06 383px;"><div class="dock dock-top"><div class="dock-bar drag-initiator" role="tablist" tabindex="-1"><div role="tablist" class="dock-nav"><div class="dock-nav-wrap"><div class="dock-nav-list" style="transform: translate(0px, 0px);"><div class="dock-tab dock-tab-active"><div role="tab" aria-selected="true" class="dock-tab-btn" tabindex="0" id="rc-tabs-2-tab-id-dataoutput" aria-controls="rc-tabs-2-panel-id-dataoutput"><div class="drag-initiator" role="tab" aria-selected="true"><div class="MuiBox-root jss33" title="Data Output"><span data-visible="true" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Data Output</span></div><div class="dock-tab-hit-area"></div></div></div></div><div class="dock-tab"><div role="tab" aria-selected="false" class="dock-tab-btn" tabindex="0" id="rc-tabs-2-tab-id-messages" aria-controls="rc-tabs-2-panel-id-messages"><div class="drag-initiator" role="tab" aria-selected="false"><div class="MuiBox-root jss34" title="Messages"><span data-visible="true" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Messages</span></div><div class="dock-tab-hit-area"></div></div></div></div><div class="dock-tab"><div role="tab" aria-selected="false" class="dock-tab-btn" tabindex="0" id="rc-tabs-2-tab-id-notifications" aria-controls="rc-tabs-2-panel-id-notifications"><div class="drag-initiator" role="tab" aria-selected="false"><div class="MuiBox-root jss35" title="Notifications"><span data-visible="true" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Notifications</span></div><div class="dock-tab-hit-area"></div></div></div></div><div class="dock-ink-bar dock-ink-bar-animated" style="left: 0px; width: 0px;"></div></div></div><div class="dock-nav-operations dock-nav-operations-hidden"><button type="button" class="dock-nav-more" tabindex="-1" aria-hidden="true" aria-haspopup="listbox" aria-controls="rc-tabs-2-more-popup" id="rc-tabs-2-more" aria-expanded="false" style="visibility: hidden; order: 1;"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: 0.9em; margin-top: 4px;"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button></div><div class="dock-extra-content"><div class="MuiBox-root jss36"></div></div></div></div><div class="dock-content-holder"><div class="dock-content dock-content-top dock-content-animated"><div id="id-dataoutput" role="tabpanel" aria-hidden="false" class="dock-tabpane dock-tabpane-active" aria-labelledby="rc-tabs-2-tab-id-dataoutput"><div class="dock-pane-cache"><div class="MuiBox-root jss52 jss51" tabindex="0"><div class="MuiBox-root jss58 jss57"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: 1.2rem;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1zm1-8h-2V7h2v2z"></path></svg><span style="margin-left: 4px;">No data output. Execute a query to get output.</span></div></div></div></div><div id="id-messages" role="tabpanel" aria-hidden="true" class="dock-tabpane" aria-labelledby="rc-tabs-2-tab-id-messages" style="visibility: hidden; height: 0px; overflow-y: hidden;"><div class="dock-pane-cache"><div class="jss59" tabindex="0"></div></div></div><div id="id-notifications" role="tabpanel" aria-hidden="true" class="dock-tabpane" aria-labelledby="rc-tabs-2-tab-id-notifications" style="visibility: hidden; height: 0px; overflow-y: hidden;"><div class="dock-pane-cache"><table class="jss60 jss62"><thead><tr><th>Recorded time</th><th>Event</th><th>Process ID</th><th>Payload</th></tr></thead><tbody></tbody></table></div></div></div></div></div></div></div><div class="dock-box dock-fbox"></div><div class="dock-box dock-mbox dock-mbox-hide"></div><div class="dock-drop-indicator"></div></div><div id="layout-portal"></div><div class="MuiBox-root jss41 jss37"><div class="MuiBox-root jss42 jss38 jss39">Total rows: 0 of 0</div><div class="MuiBox-root jss43 jss38 jss40">Ln 1, Col 40</div></div></div></div>
+<script type="application/javascript">
+                try {
+        require(
+            ['sources/generated/browser_nodes', 'sources/generated/codemirror'],
+            function() {
+                require(['sources/generated/sqleditor'], function(module) {
+                window.pgAdmin.Tools.SQLEditor.loadComponent(
+                    document.getElementById('sqleditor-container'), {"is_query_tool": "true", "sgid": "1", "sid": "1", "did": "16384", "database_name": "ny_taxi", "query_url": "/browser/table/select_sql/1/1/16384/2200/16413", "title": "ny_taxi/postgres@docker localhost", "trans_id": 3052818, "client_platform": null, "is_linux": true, "bgcolor": null, "fgcolor": null, "server_name": "docker localhost", "user": "postgres", "layout": "{\"dockbox\":{\"id\":\"+1\",\"size\":200,\"mode\":\"vertical\",\"children\":[{\"id\":\"+2\",\"size\":453,\"mode\":\"horizontal\",\"children\":[{\"id\":\"+3\",\"size\":200,\"tabs\":[{\"id\":\"id-query\"},{\"id\":\"id-history\"}],\"group\":\"default\",\"activeId\":\"id-query\"},{\"id\":\"+4\",\"size\":75,\"tabs\":[{\"id\":\"id-scratch\"}],\"group\":\"default\",\"activeId\":\"id-scratch\"}]},{\"id\":\"+6\",\"size\":383,\"tabs\":[{\"id\":\"id-dataoutput\"},{\"id\":\"id-messages\"},{\"id\":\"id-notifications\"}],\"group\":\"default\",\"activeId\":\"id-dataoutput\"}]},\"floatbox\":{\"id\":\"+10\",\"size\":0,\"mode\":\"float\",\"children\":[]},\"windowbox\":{\"id\":\"+11\",\"size\":0,\"mode\":\"window\",\"children\":[]},\"maxbox\":{\"id\":\"+12\",\"size\":1,\"mode\":\"maximize\",\"children\":[]}}", "macros": [], "is_desktop_mode": false});
+
+            }, function() {
+                console.log(arguments);
+            });
+        },
+        function() {
+            console.log(arguments);
+        });
+    } catch (err) {
+        console.log(err);
+    }
+</script>
+
+
+<div class="szh-menu-container jss18"><ul role="menu" aria-label="Layout Context Menu" tabindex="-1" data-state="closed" class="szh-menu szh-menu--state-closed szh-menu--dir-bottom" style="left: 0px; top: 0px;"><li role="menuitem" aria-disabled="true" data-label="No options" data-checked="false" class="szh-menu__item szh-menu__item--disabled">No options</li></ul></div></body></html>

@@ -1,0 +1,174 @@
+# Set environment variables for PostgreSQL configuration:
+# -e POSTGRES_USER: "root": Set the PostgreSQL database user to "root".
+# -e POSTGRES_PASSWORD: "root": Set the password for the PostgreSQL user to "root".
+# -e POSTGRES_DB: "ny_taxi": Set the default PostgreSQL database to "ny_taxi".
+# Mount a volume to persist data outside the container:
+# -v /Users/hashim.asaad/Documents/Hashim.Asaad/study/Data-Enginerring-ZoomCamp/Week_1/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data: 
+#   Mount the local directory to the specified path within the container, allowing data to persist.
+#   Replace "/Users/hashim.asaad/Documents/Hashim.Asaad/study/Data-Enginerring-ZoomCamp/Week_1/2_docker_sql/ny_taxi_postgres_data" with your local path.
+# Expose port 5432 on the host machine:
+# -p 5432:5432: Map port 5432 on the host machine to port 5432 in the container.
+# Use the PostgreSQL version 13 image:
+# postgres:13: Pull the PostgreSQL version 13 image from the Docker Hub and run the container.
+
+###### Full Doker image code :-   
+## to build an postgress image.we need to select path thto set database files 
+#it will ne in folder ny_taxi_postgres_data after create below image 
+
+''' 
+  docker run -it \
+    -e POSTGRES_USER=postgres \
+    -e POSTGRES_PASSWORD=g2kadmin \
+    -e POSTGRES_DB=ny_taxi \
+    -v /Users/hashim.asaad/Documents/Hashim.Asaad/study/Data-Enginerring-ZoomCamp/Week_1/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    postgres:13
+'''
+
+# to run pgadmin in docker:
+# we need to access data in interactive tool like pgadmin so we will build pgadmin image 
+'''
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="g2kadmin" \
+  -p 8080:80 \
+  dpage/pgadmin4
+'''
+#***********************************< HINT > *****************************************************************
+#-- the databases and pgadmin doesnot see each other beacuse beacuse everyone in indevidual container 
+#-- so we need to spacfiy network to link them 
+#-- we will add --network=pg-network  in every doker image for  postgres ,pgadmin
+#*************************************************************************************************************
+  #docker network create pg-network 
+'''
+   docker run -it \
+    -e POSTGRES_USER=postgres \
+    -e POSTGRES_PASSWORD=g2kadmin \
+    -e POSTGRES_DB=ny_taxi \
+    -v /Users/hashim.asaad/Documents/Hashim.Asaad/study/Data-Enginerring-ZoomCamp/Week_1/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    --network=pg-network  \
+    --name pg-database2 \
+    postgres:13
+
+'''
+'''
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="g2kadmin" \
+  -p 8080:80 \
+  --network=pg-network  \
+  --name pgadmin \
+  dpage/pgadmin4
+'''
+
+
+## Training on Docker + Postgres before homework :-
+##Doker file Code:-
+'''
+## Use the official Python 3.9 image as the base image
+FROM python:3.9
+
+RUN apt-get install wget 
+RUN pip install requests
+RUN pip install pyarrow
+
+# Install pandas using pip
+# psycopg2 -> its lib to access postgres throw Python 
+RUN pip install pandas sqlalchemy psycopg2 
+# this is will be the location in the image in the container where we will copy the file :
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the pipeline.py file into the container at /app
+COPY ingest_data.py  /app/ingest_data.py
+# Set the default command to run when the container starts
+ENTRYPOINT [ "python","ingest_data.py" ]
+'''
+#***********************************< HINT > *****************************************************************
+#-- please review  ingest_data.py first
+#*************************************************************************************************************
+
+
+#build doker image:-
+'''
+    docker build -t taxi_ingest:v001 .
+
+  URL="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet"
+
+  docker run -it \
+  --network=pg-network  \
+  taxi_ingest:v001 \
+  --user=postgres \
+  --password=g2kadmin \
+  --host=pg-database2 \
+  --port=5432 \
+  --db=ny_taxi \
+  --table_name=yellow_taxi_trips \
+  --url=${URL}
+
+'''
+
+#################################################<< Home work >>#################################################
+#Prepare Postgres
+#Run Postgres and load data as shown in the videos We'll use the green taxi trips from September 2019:
+#wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz
+#You will also need the dataset with zones:
+#wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
+#Download this data and put it into Postgres (with jupyter notebooks or with a pipeline)##
+##Doker file Code:-
+'''
+## Use the official Python 3.9 image as the base image
+FROM python:3.9
+
+RUN apt-get install wget 
+RUN pip install requests
+RUN pip install pyarrow
+
+# Install pandas using pip
+# psycopg2 -> its lib to access postgres throw Python 
+RUN pip install pandas sqlalchemy psycopg2 
+# this is will be the location in the image in the container where we will copy the file :
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the pipeline.py file into the container at /app
+COPY ingest_data_Homework.py  /app/ingest_data_Homework.py
+# Set the default command to run when the container starts
+ENTRYPOINT [ "python","ingest_data_Homework.py" ]
+'''
+#***********************************< HINT > *****************************************************************
+#-- please review ingest_data_Homework  first
+#*************************************************************************************************************
+#build doker image:-
+'''
+    docker build -t taxi_ingest2:v001 .
+
+  URL="https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-09.parquet"
+
+  docker run -it \
+  --network=pg-network  \
+  taxi_ingest2:v001 \
+  --user=postgres \
+  --password=g2kadmin \
+  --host=pg-database2 \
+  --port=5432 \
+  --db=ny_taxi \
+  --table_name=green_taxi_trips \
+  --url=${URL}
+  '''
+
+
+
+
+#some commands:- 
+# pip install pgcli
+# pgcli -h localhost -p 5432 -u postgres -d ny_taxi
+#pip install jupyter
+#jupyter notebook
+# data link :https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page >> https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet
+# cmaand to downlad file and save it in tha same dirctory u run command in :
+#curl -O https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet
+#curl https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
+# to see some data form the file you can use: less yellow_tripdata_2021-01.parquet
+# select top 100 rows in the file :head -n 100 yellow_tripdata_2021-01.parquet >yellow_head.parquet
