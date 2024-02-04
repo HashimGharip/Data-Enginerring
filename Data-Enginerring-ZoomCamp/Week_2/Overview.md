@@ -33,3 +33,37 @@ Changing one block will change it everywhere it’s used, but don’t worry, it�
 Blocks can be used to perform a variety of actions, from simple data transformations to complex machine learning models. 
 
 
+# Commands:-
+Navigate to the repo
+- git clone https://github.com/mage-ai/mage-zoomcamp.git
+
+- ls -la
+
+Rename dev.env to simply .env— this will ensure the file is not committed to Git by accident, since it will contain credentials in the future,.env (its security issue beacuse we clone .env as dev.env  and the .env may contains secret info).
+- cp dev.env 
+
+Now, let's build the container
+- docker compose build
+- docker pull mageai/mageai:latest
+
+Finally, start the Docker container:
+- docker compose up
+
+Now, navigate to http://localhost:6789 in your browser! Voila! You're ready to get started with the course.
+
+
+
+# hints:-
+- You can now start the database server using:
+ pg_ctl -D /var/lib/postgresql/data -l logfile start
+
+
+# Data we working on : wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz 
+
+  POSTGRES_CONNECT_TIMEOUT: 10
+  POSTGRES_DBNAME: postgres
+  POSTGRES_SCHEMA: public # Optional
+  POSTGRES_USER: username
+  POSTGRES_PASSWORD: password
+  POSTGRES_HOST: hostname
+  POSTGRES_PORT: 5432

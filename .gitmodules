@@ -1,0 +1,3 @@
+[submodule "Data-Enginerring-ZoomCamp/Week_2/mage-zoomcamp"]
+    path = Data-Enginerring-ZoomCamp/Week_2/mage-zoomcamp
+    url = https://github.com/mage-ai/mage-zoomcamp.git
