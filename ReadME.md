@@ -4,4 +4,4 @@ Explore a diverse set of hands-on exercises and training materials in the field 
 ![data-engineer](https://github.com/HashimGharip/Data-Enginerring/assets/47179267/2e4fe8df-bee5-4eb2-9405-69cd9744e14f)
 # Subfolders:
 - Data-Engineering-ZoomCamp: contains all material and practice for the Data-Club ZoomCamp 2024 round in the data engineering field.
-- Training-Projects        : contains some awesome tools training.
+- Training-Projects: contains some awesome tools training.
