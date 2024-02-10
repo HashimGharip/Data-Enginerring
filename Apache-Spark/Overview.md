@@ -166,9 +166,65 @@
    So that part is quite simple for those who already know SQL.Spark DataFrame/DataSet will allow you to use functional programming techniques
    to solve your data crunching problems.These APIs are available in Java, Scala, and Python.Both of these together can help you resolve most of the structured and semistructured data crunching problems
 
+ - How to execute Spark Programs?
+   1. Interactive Clinets: spark-shell, Notbook
+   2. Submit-Job : spark-submit, Databricks Notebook, Rest API
+
+ - Processing Model 
+   ![alt text](Processing-Modele.png)
+   Suppose you are using the spark-submit utility,and you submitted an application A1.
+   Now Spark engine will request the cluster manager to give a container and start a driver process for A1.
+   Once started,the driver will ask for some more containers from the cluster manager and start slave executors.
+   And that's all.
+   Now your driver and executors are responsible for running your application code and doing the job that you wanted.
+   Let's assume you submitted one more application, A2.
+   Now the A2 is going to repeat the same.
+   That means the spark engine will request a container and start the A2 driver Then the A2 driver is going to ask some more containers and start the A2 executors.And in all this,A1 and A2 are two independent applications.
+   Both of them are following a master-salve architectureand have their own dedicated driver and executors. 
+   Every spark application applies a master-slave architectureand runs independently on the cluster.
+   And that is how Spark is a distributed computing platform.
+   
+ - Execution Model 
+  ![alt text](execution-Model.png)
+
+
+ - Working with pysaprk shell demo 
+   1. open terminal
+   2. run pyspark --help 
+     - find --master MASTER_URL         spark://host:port, mesos://host:port, yarn,
+                                        k8s://https://host:port, or local (Default: local[*]).
+            --driver-memory MEM         Memory for driver (e.g. 1000M, 2G) (Default: 1024M).
+   3. run pyspark --master "local[3]" --driver-memory 2G
+   4. go to http://192.168.1.4:4040/jobs/
+   5. try df =spark.read.csv("your file path")
+   6. df.show()   
+   7. back to spark UI to see submitted jobs
+  ![alt text](pyspark-local-job.png)
+  - Spark started an executor driver process.We do not see the separate driver and executor processes.
+    Why?
+    Because we are in a local cluster,and everything is running inside a single JVM.
+    And the JVM is a combination of driver and executors.
+    And that's what we see here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # resources 
   - https://servicenow.udemy.com/course/apache-spark-programming-in-python-for-beginners
   - https://spark.apache.org/
   - https://www.databricks.com/glossary/what-is-apache-spark
   - https://www.youtube.com/watch?v=p_jl-gFinlA&list=PLxNoJq6k39G_m6DYjpz-V92DkaQEiXxkF
-  
+  - https://blog.stackademic.com/apache-spark-101-understanding-spark-code-execution-cbff49cb85ac
+  - https://www.youtube.com/@cleverstudies/playlists
