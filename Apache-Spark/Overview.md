@@ -7,6 +7,7 @@
 - [Hadoop-Architecture-History-Evolution](#Hadoop-Architecture-History-Evolution)
 - [Data-Lake-Overview](#Data-Lake-Overview)
 - [Apache-Spark-Layers](#Apache-Spark-Layers)
+- [resources](#resources)
 
 
 ## Overview
@@ -165,3 +166,9 @@
    So that part is quite simple for those who already know SQL.Spark DataFrame/DataSet will allow you to use functional programming techniques
    to solve your data crunching problems.These APIs are available in Java, Scala, and Python.Both of these together can help you resolve most of the structured and semistructured data crunching problems
 
+# resources 
+  - https://servicenow.udemy.com/course/apache-spark-programming-in-python-for-beginners
+  - https://spark.apache.org/
+  - https://www.databricks.com/glossary/what-is-apache-spark
+  - https://www.youtube.com/watch?v=p_jl-gFinlA&list=PLxNoJq6k39G_m6DYjpz-V92DkaQEiXxkF
+  
